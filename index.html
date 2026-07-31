@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AX To My Moonlight 1314 - 以科学护肤与郑重心意，献给每一次认真对待。" />
+    <meta name="theme-color" content="#090b0d" />
+    <title>AX | To My Moonlight 1314</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="brand.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <nav class="ax-nav" id="nav">
+      <a class="brand" href="#top" aria-label="AX 首页">A<span>×</span></a>
+      <div class="nav-links">
+        <a href="#series" data-i18n="nav.series">产品系列</a>
+        <a href="#science" data-i18n="nav.science">科研灵感</a>
+        <a href="#moonlight" data-i18n="nav.moonlight">月光礼遇</a>
+        <a href="#ritual" data-i18n="nav.ritual">护理仪式</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle ax-lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">中 / EN</button>
+        <a class="nav-cta" href="#series" data-i18n="nav.cta">探索 AX</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">To My Moonlight · 1314</p>
+          <h1 id="hero-title" data-i18n-html="true" data-i18n="hero.title">重要的日子<br><em>值得郑重。</em></h1>
+          <p class="hero-desc" data-i18n="hero.desc">AX 以科学护肤与郑重心意，献给每一个值得被认真对待的时刻。</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#series" data-i18n="hero.primary">探索精华系列</a>
+            <a class="text-link" href="#moonlight" data-i18n="hero.secondary">致我的月光 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta"><span data-i18n="hero.meta1">护肤精华系列</span><i></i><span data-i18n="hero.meta2">爱情见证官</span></div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="assets/hero-lifestyle.jpg" alt="AX To My Moonlight 礼盒" class="hero-image" />
+          <div class="hero-image-wash"></div>
+          <div class="hero-image-caption">AX · TO MY MOONLIGHT · 1314</div>
+        </div>
+      </section>
+
+      <section class="brand-intro" aria-label="AX 品牌理念">
+        <p class="intro-kicker" data-i18n="intro.kicker">礼遇，从抵达开始。</p>
+        <div class="intro-line"></div>
+        <p class="intro-copy" data-i18n="intro.copy">不只是礼物，是被郑重准备的心意。让护肤回到日常，也让每一次认真，都有被珍藏的理由。</p>
+      </section>
+
+      <section class="series-section" id="series" aria-labelledby="series-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow" data-i18n="series.eyebrow">AX skincare collection</p>
+            <h2 id="series-title" data-i18n="series.title">为不同状态<br>定制一瓶精华。</h2>
+          </div>
+          <p data-i18n="series.desc">从保湿舒缓、油脂管理，到紧致焕亮与眼周护理，AX 以六款精华回应不同肤感与护肤需求。</p>
+        </div>
+
+        <div class="product-explorer">
+          <div class="product-tabs" role="tablist" aria-label="AX 产品系列">
+            <button class="product-tab is-active" type="button" data-product="firming" role="tab" aria-selected="true"><span>01</span><b data-i18n="tabs.firming">凝时紧塑</b><em>50 ML</em></button>
+            <button class="product-tab" type="button" data-product="pore" role="tab" aria-selected="false"><span>02</span><b data-i18n="tabs.pore">毛孔细致</b><em>50 ML</em></button>
+            <button class="product-tab" type="button" data-product="clear" role="tab" aria-selected="false"><span>03</span><b data-i18n="tabs.clear">净澈清肤</b><em>50 ML</em></button>
+            <button class="product-tab" type="button" data-product="anti-aging" role="tab" aria-selected="false"><span>04</span><b data-i18n="tabs.antiAging">逆龄抗皱精华油</b><em>50 ML</em></button>
+            <button class="product-tab" type="button" data-product="light" role="tab" aria-selected="false"><span>05</span><b data-i18n="tabs.light">光感焕颜精华油</b><em>50 ML</em></button>
+            <button class="product-tab" type="button" data-product="eye" role="tab" aria-selected="false"><span>06</span><b data-i18n="tabs.eye">逆龄抗皱眼部精华油</b><em>30 ML</em></button>
+          </div>
+          <article class="product-stage" id="product-stage" data-product="firming">
+            <div class="product-visual"><img id="product-image" src="assets/firming-essence.jpg" alt="AX 凝时紧塑精华液" /></div>
+            <div class="product-copy">
+              <p class="product-num" id="product-num">01 / 06</p>
+              <p class="product-type" id="product-type">CURDLING AND FIRMING ESSENCE · 50 ML</p>
+              <h3 id="product-title">AX 凝时紧塑精华液</h3>
+              <p class="product-effect" id="product-effect">备案功效：保湿、抗皱、紧致</p>
+              <p class="product-desc" id="product-desc">以 PROCOLL INFUSION® 智导渗透与瑞士 OXY 229 CB 酵母精粹，为肌肤带来水润呵护与紧实光彩。</p>
+              <div class="ingredient-list" id="ingredient-list"></div>
+              <p class="product-note" data-i18n="series.note">请按产品包装说明使用；具体成分以产品包装标示为准。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="science-section" id="science" aria-labelledby="science-title">
+        <div class="science-header">
+          <p class="eyebrow" data-i18n="science.eyebrow">Research with tenderness</p>
+          <h2 id="science-title" data-i18n="science.title">科研挚爱，瑞士灵感。</h2>
+          <p data-i18n="science.desc">AX 精华系列将不同植萃、复合成分与细致肤感融入日常护理，以温和的方式回应肌肤所需。</p>
+        </div>
+        <div class="science-grid">
+          <article class="science-card accent-card"><span>01</span><h3>OXY 229 CB</h3><p data-i18n="science.c1">瑞士来源复合成分，见于多款 AX 精华，帮助补充水润营养、维持肌肤细腻稳定状态。</p></article>
+          <article class="science-card"><span>02</span><h3>PROCOLL INFUSION<sup>®</sup></h3><p data-i18n="science.c2">用于凝时紧塑精华液的胶原相关成分体系，搭配日本进口硅烷改性胶原等成分。</p></article>
+          <article class="science-card"><span>03</span><h3>BisaboLife<sup>®</sup></h3><p data-i18n="science.c3">瑞士红没药醇相关成分，见于逆龄抗皱精华油与眼部精华油的配方表达。</p></article>
+        </div>
+        <p class="science-footnote" data-i18n="science.footnote">产品备案功效与成分信息来自 AX 产品介绍；产品实际成分以包装标示为准。</p>
+      </section>
+
+      <section class="moonlight-section" id="moonlight" aria-labelledby="moonlight-title">
+        <div class="moonlight-photo"><img src="assets/moonlight-gift.png" alt="AX To My Moonlight 1314 礼盒与月光主题陈列" /></div>
+        <div class="moonlight-copy">
+          <p class="eyebrow" data-i18n="moonlight.eyebrow">To My Moonlight 1314</p>
+          <h2 id="moonlight-title" data-i18n="moonlight.title">凤凰入礼，<br>月光作证。</h2>
+          <p data-i18n="moonlight.desc">黑金与青绿藏进每一处细节。AX 将护肤心意置于「To My Moonlight」的礼遇表达中，让重要的日子，多一份被郑重准备的光。</p>
+          <dl class="moonlight-notes">
+            <div><dt data-i18n="moonlight.n1t">1314</dt><dd data-i18n="moonlight.n1d">爱情见证官</dd></div>
+            <div><dt data-i18n="moonlight.n2t">AX</dt><dd data-i18n="moonlight.n2d">献给重要的人，也献给每一次认真</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="ritual-section" id="ritual" aria-labelledby="ritual-title">
+        <div class="section-heading centered">
+          <p class="eyebrow" data-i18n="ritual.eyebrow">The daily ritual</p>
+          <h2 id="ritual-title" data-i18n="ritual.title">让每一滴，都恰到好处。</h2>
+          <p data-i18n="ritual.desc">精华液的标准护理流程：洁面、爽肤、精华、乳液或面霜锁水保湿。</p>
+        </div>
+        <div class="ritual-grid">
+          <article class="ritual-card"><span>01</span><div class="ritual-icon clean-icon"></div><h3 data-i18n="ritual.s1">洁面</h3><p data-i18n="ritual.s1d">洁净肌肤后，轻拍爽肤水至吸收，让肌肤保持水润通透。</p></article>
+          <article class="ritual-card"><span>02</span><div class="ritual-icon drop-icon"></div><h3 data-i18n="ritual.s2">点涂</h3><p data-i18n="ritual.s2d">取适量精华，均匀点涂于额头、鼻翼、脸颊与下巴。</p></article>
+          <article class="ritual-card"><span>03</span><div class="ritual-icon lift-icon"></div><h3 data-i18n="ritual.s3">轻柔提拉</h3><p data-i18n="ritual.s3d">由内向外、由下向上轻柔按摩至吸收，避免大力拉扯肌肤。</p></article>
+          <article class="ritual-card"><span>04</span><div class="ritual-icon lock-icon"></div><h3 data-i18n="ritual.s4">锁住水润</h3><p data-i18n="ritual.s4d">待精华吸收后，及时使用乳液或面霜锁住肌肤水分。</p></article>
+        </div>
+      </section>
+
+      <section class="membership-section" aria-labelledby="membership-title">
+        <div class="membership-image"><img src="assets/phoenix-gift.png" alt="AX 凤凰礼盒" /></div>
+        <div class="membership-copy">
+          <p class="eyebrow" data-i18n="membership.eyebrow">For every recipient</p>
+          <h2 id="membership-title" data-i18n="membership.title">成为 AX 的收礼人。</h2>
+          <p data-i18n="membership.desc">我们为每一位开启月光契约的人，准备两份专属心意。</p>
+          <div class="membership-list">
+            <article><span>01</span><h3 data-i18n="membership.g1">初见礼</h3><p data-i18n="membership.g1d">首次登录 AX 小程序并完成会员注册，可任选一款功效的 15 ml 珍萃中样。</p></article>
+            <article><span>02</span><h3 data-i18n="membership.g2">分享礼</h3><p data-i18n="membership.g2d">分享至朋友圈或小红书等平台并按活动规则提交，即有机会获赠 15 ml 珍萃中样或其他礼赠。</p></article>
+          </div>
+          <p class="membership-note" data-i18n="membership.note">具体礼遇以 AX 小程序及活动规则为准。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ax-footer">
+      <a class="brand" href="#top" aria-label="回到首页">A<span>×</span></a>
+      <p data-i18n="footer.tagline">To My Moonlight · 献给重要的人，也献给每一次认真。</p>
+      <p>© <span id="year"></span> AX</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
