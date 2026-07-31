@@ -19,12 +19,16 @@ await writeFile(
   join(dist, "server", "index.js"),
   `export default {
   async fetch(request, env) {
-    const response = await env.ASSETS.fetch(request);
+    const url = new URL(request.url);
+    const assetUrl = new URL(
+      url.pathname === "/" ? "/index.html" : url.pathname,
+      request.url,
+    );
+    const response = await env.ASSETS.fetch(new Request(assetUrl, request));
     if (response.status !== 404) return response;
 
-    const url = new URL(request.url);
     if (!url.pathname.includes(".")) {
-      return env.ASSETS.fetch(new Request(new URL("/", request.url)));
+      return env.ASSETS.fetch(new Request(new URL("/index.html", request.url)));
     }
 
     return response;
