@@ -13,6 +13,11 @@
 
 /* Visual refinement: a clearer product focal point and more resilient desktop balance. */
 .hero{max-width:none;margin:0}
+.brand{display:inline-flex;align-items:center;justify-content:flex-start;width:66px;height:46px;overflow:hidden}
+.brand img{display:block;width:66px;height:auto;mix-blend-mode:screen;transition:transform .25s ease,filter .25s ease}
+.brand:hover img{transform:translateY(-1px);filter:brightness(1.08)}
+.ax-footer .brand{width:58px;height:40px}
+.ax-footer .brand img{width:58px}
 #series,#science,#moonlight,#ritual,.collection-manifesto,#manifesto-title{scroll-margin-top:96px}
 @media (min-width:901px){
   .hero{grid-template-columns:1fr 1fr}
@@ -47,6 +52,8 @@
   .brand-intro-art{max-width:360px;min-height:260px}
 }
 @media (max-width:560px){
+  .brand{width:58px;height:40px}
+  .brand img{width:58px}
   .manifesto-image{min-height:126vw}
   .manifesto-copy{padding:4rem 1.35rem}
   .manifesto-copy h2{font-size:clamp(3rem,13.4vw,4.2rem)}
