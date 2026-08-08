@@ -50,7 +50,7 @@
 .manifesto-note{position:relative;margin:0;color:var(--gold-light);font:600 .68rem/1.6 var(--mono);letter-spacing:.14em}
 .moonlight-photo img{object-position:center 58%}
 .series-title{max-width:11.4em!important;color:var(--paper);font-size:clamp(2.85rem,4.5vw,5rem)!important;line-height:1.1!important;letter-spacing:-.075em!important}
-.series-title span{display:block;white-space:nowrap}.series-title span+span{margin-top:.12em;padding-left:.72em}
+.series-title span{display:block;white-space:nowrap}.series-title span+span{margin-top:.12em;padding-left:0}
 .moonlight-copy h2{max-width:10.7em;font-size:clamp(2.4rem,3.1vw,4rem);line-height:1.13;letter-spacing:-.072em}
 .moonlight-copy h2 em{color:var(--paper);font-style:normal;font-weight:500}
 .moonlight-copy h2 .moonlight-message{display:block}
