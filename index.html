@@ -43,11 +43,39 @@
         </div>
       </section>
 
-      <section class="brand-intro" aria-label="AX 品牌理念">
-        <p class="intro-kicker" data-i18n="intro.kicker">礼遇，从抵达开始。</p>
-        <div class="intro-line"></div>
-        <p class="intro-copy" data-i18n="intro.copy">不只是礼物，是被郑重准备的心意。让护肤回到日常，也让每一次认真，都有被珍藏的理由。</p>
-        <figure class="brand-intro-art"><img src="assets/ritual-card.png" alt="To My Moonlight 礼盒细节" loading="lazy" /></figure>
+      <section class="brand-carousel" aria-labelledby="brand-carousel-title" data-carousel>
+        <div class="brand-carousel-copy">
+          <p class="eyebrow" data-i18n="carousel.eyebrow">TO MY MOONLIGHT · 1314</p>
+          <h2 id="brand-carousel-title" data-i18n-html="true" data-i18n="carousel.title">礼遇，从<br>抵达开始。</h2>
+          <p data-i18n="carousel.desc">不只是礼物，是被郑重准备的心意。让护肤回到日常，也让每一次认真，都有被珍藏的理由。</p>
+          <div class="carousel-controls" aria-label="月光礼遇海报切换">
+            <button class="carousel-arrow" type="button" data-carousel-prev aria-label="查看上一张海报">←</button>
+            <div class="carousel-dots" role="tablist" aria-label="选择海报">
+              <button class="is-active" type="button" role="tab" aria-selected="true" aria-label="第 1 张海报" data-carousel-dot="0"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="第 2 张海报" data-carousel-dot="1"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="第 3 张海报" data-carousel-dot="2"></button>
+            </div>
+            <button class="carousel-arrow" type="button" data-carousel-next aria-label="查看下一张海报">→</button>
+          </div>
+        </div>
+
+        <div class="carousel-stage" data-carousel-stage tabindex="0" aria-label="月光礼遇海报轮播">
+          <article class="carousel-slide is-active" data-carousel-slide aria-hidden="false">
+            <div class="carousel-poster"><img src="assets/moonlight-new-york.jpg" alt="AX To My Moonlight 纽约主题礼盒海报" loading="lazy" /></div>
+            <p class="carousel-count">01 / 03</p>
+            <p class="carousel-caption" data-i18n="carousel.slide1">月光礼遇 · 认真抵达</p>
+          </article>
+          <article class="carousel-slide" data-carousel-slide aria-hidden="true">
+            <div class="carousel-poster"><img src="assets/moonlight-sealed-letter.jpg" alt="AX 1314 月光契约礼盒封缄海报" loading="lazy" /></div>
+            <p class="carousel-count">02 / 03</p>
+            <p class="carousel-caption" data-i18n="carousel.slide2">月光封缄 · 心意留存</p>
+          </article>
+          <article class="carousel-slide" data-carousel-slide aria-hidden="true">
+            <div class="carousel-poster"><img src="assets/moonlight-europe.jpg" alt="AX To My Moonlight 欧洲主题礼盒海报" loading="lazy" /></div>
+            <p class="carousel-count">03 / 03</p>
+            <p class="carousel-caption" data-i18n="carousel.slide3">月光漫游 · 让故事发生</p>
+          </article>
+        </div>
       </section>
 
       <section class="collection-manifesto" aria-labelledby="manifesto-title">

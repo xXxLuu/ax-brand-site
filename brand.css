@@ -76,3 +76,24 @@
   .hero-content.hero-promise{min-height:680px}
   .hero-image-wrap{display:block;order:initial;height:min(92vw,690px)}
 }
+
+/* Moonlight editorial carousel */
+.brand-carousel{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(420px,1.28fr);gap:clamp(2.5rem,7vw,8rem);max-width:1360px;min-height:760px;margin:0 auto;padding:clamp(4rem,8vw,7.5rem) clamp(1.5rem,5vw,5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(circle at 90% 14%,rgba(197,161,101,.11),transparent 34%),#0c1012}
+.brand-carousel-copy{align-self:center;max-width:420px}
+.brand-carousel-copy .eyebrow{margin:0 0 1.25rem;color:var(--gold-light)}
+.brand-carousel-copy h2{margin:0;font:600 clamp(3.5rem,5.2vw,6rem)/.92 var(--serif);letter-spacing:-.065em}
+.brand-carousel-copy>p:not(.eyebrow){max-width:350px;margin:2rem 0 0;color:rgba(243,238,228,.67);font-size:.88rem}
+.carousel-controls{display:flex;align-items:center;gap:1.25rem;margin-top:3.5rem}
+.carousel-arrow{display:grid;width:43px;height:43px;place-items:center;border:1px solid rgba(236,209,154,.5);border-radius:50%;background:transparent;color:var(--paper);font:1.25rem/1 var(--serif);cursor:pointer;transition:.25s}
+.carousel-arrow:hover,.carousel-arrow:focus-visible{border-color:var(--gold-light);background:var(--gold-light);color:var(--ink);outline:0}
+.carousel-dots{display:flex;align-items:center;gap:.58rem}
+.carousel-dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:rgba(243,238,228,.34);cursor:pointer;transition:.25s}.carousel-dots button.is-active{width:27px;border-radius:99px;background:var(--gold-light)}
+.carousel-stage{position:relative;min-height:700px;overflow:hidden;border-left:1px solid var(--line);outline:none}
+.carousel-stage:focus-visible{outline:1px solid var(--gold-light);outline-offset:5px}
+.carousel-slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;opacity:0;pointer-events:none;transform:translateX(5%);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.carousel-slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);visibility:visible}
+.carousel-poster{width:min(82%,470px);aspect-ratio:3/4;overflow:hidden;background:#d7c7ad;box-shadow:0 22px 45px rgba(0,0,0,.35)}
+.carousel-poster img{display:block;width:100%;height:100%;object-fit:contain;background:#d7c7ad}
+.carousel-count,.carousel-caption{margin:0;font:500 .58rem/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}.carousel-count{color:var(--gold-light)}.carousel-caption{color:rgba(243,238,228,.62)}
+@media(max-width:900px){.brand-carousel{grid-template-columns:1fr;gap:3rem;min-height:0}.brand-carousel-copy{max-width:520px}.carousel-stage{min-height:min(128vw,690px);border-top:1px solid var(--line);border-left:0}.carousel-poster{width:min(78%,430px)}}
+@media(max-width:560px){.brand-carousel{padding:4.75rem 1.35rem}.brand-carousel-copy h2{font-size:clamp(3.1rem,14vw,4.3rem)}.brand-carousel-copy>p:not(.eyebrow){margin-top:1.5rem}.carousel-controls{margin-top:2.4rem}.carousel-stage{min-height:138vw}.carousel-poster{width:88%}}
