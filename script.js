@@ -2,7 +2,7 @@
 const i18n = {
   zh: {
     'nav.series':'产品系列','nav.science':'科研灵感','nav.moonlight':'月光礼遇','nav.ritual':'护理仪式','nav.cta':'探索 AX',
-    'hero.eyebrow':'To My Moonlight · 1314','hero.title':'重要的日子<br><em>值得郑重。</em>','hero.desc':'AX 以科学护肤与郑重心意，献给每一个值得被认真对待的时刻。','hero.primary':'探索精华系列','hero.secondary':'致我的月光','hero.meta1':'护肤精华系列','hero.meta2':'爱情见证官',
+    'hero.title':'一生一诺<br><em>为唯一而生</em>','hero.signature':'AX · 月光契约实验室',
     'intro.kicker':'礼遇，从抵达开始。','intro.copy':'不只是礼物，是被郑重准备的心意。让护肤回到日常，也让每一次认真，都有被珍藏的理由。','manifesto.eyebrow':'把心意，做成看得见的礼遇','manifesto.title':'不止护肤。<br><em>更是一份郑重。</em>','manifesto.desc':'从一瓶精华开始，AX 把感受、仪式与日常护理放在一起，为值得被认真对待的人准备一份恰到好处的心意。','manifesto.note':'为肌肤准备，也为重要时刻准备。',
     'series.eyebrow':'AX 护肤精华系列','series.title':'为不同状态<br>定制一瓶精华。','series.desc':'从保湿舒缓、油脂管理，到紧致焕亮与眼周护理，AX 以六款精华回应不同肤感与护肤需求。','series.note':'请按产品包装说明使用；具体成分以产品包装标示为准。',
     'tabs.firming':'凝时紧塑','tabs.pore':'毛孔细致','tabs.clear':'净澈清肤','tabs.antiAging':'逆龄抗皱精华油','tabs.light':'光感焕颜精华油','tabs.eye':'逆龄抗皱眼部精华油',
@@ -13,7 +13,7 @@ const i18n = {
   },
   en: {
     'nav.series':'Collection','nav.science':'Research','nav.moonlight':'Moonlight Gift','nav.ritual':'Ritual','nav.cta':'Explore AX',
-    'hero.eyebrow':'To My Moonlight · 1314','hero.title':'Important days<br><em>deserve intention.</em>','hero.desc':'AX brings together considered skincare and a thoughtful gesture, for every moment worth treating with care.','hero.primary':'Explore the collection','hero.secondary':'To my moonlight','hero.meta1':'Skincare essence collection','hero.meta2':'A witness to love',
+    'hero.title':'One promise<br><em>for the one and only</em>','hero.signature':'AX · Moonlight Promise Atelier',
     'intro.kicker':'A gift begins with its arrival.','intro.copy':'More than a present, it is an intention prepared with care. AX makes room for daily skincare - and for every act of thoughtfulness to be remembered.','manifesto.eyebrow':'An intention, made tangible','manifesto.title':'More than skincare.<br><em>A considered gesture.</em>','manifesto.desc':'Starting with an essence, AX brings feeling, ritual, and daily care together in a gesture prepared for someone worth treating with care.','manifesto.note':'Prepared for the skin, and for the moments that matter.',
     'series.eyebrow':'AX skincare collection','series.title':'One essence<br>for every skin moment.','series.desc':'From hydration and soothing to oil balance, firming, radiance, and eye-area care, six AX essences answer different daily skincare needs.','series.note':'Use as directed on the product packaging. Refer to product packaging for the full ingredient list.',
     'tabs.firming':'Firming','tabs.pore':'Pore Refining','tabs.clear':'Clear Skin','tabs.antiAging':'Anti-Aging Oil','tabs.light':'Light Essence Oil','tabs.eye':'Eye Essence Oil',
