@@ -93,6 +93,41 @@
   .hero-image-wrap{display:block;order:initial;height:min(92vw,690px)}
 }
 
+/* Gift moments — six supplied lifestyle scenes, presented as an editorial carousel. */
+.scene-carousel-section{position:relative;max-width:1480px;margin:0 auto;padding:clamp(5rem,9vw,8.5rem) clamp(1.35rem,5vw,5rem);overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(circle at 88% 10%,rgba(197,161,101,.1),transparent 27%),radial-gradient(circle at 5% 90%,rgba(35,100,99,.1),transparent 30%),#0b0f11}
+.scene-carousel-section::after{content:'1314';position:absolute;right:-.05em;bottom:-.24em;color:rgba(236,209,154,.027);font:italic 19rem/.8 var(--serif);pointer-events:none}
+.scene-carousel-header{position:relative;z-index:1;max-width:760px;margin:0 auto clamp(3.1rem,5vw,5rem);text-align:center}
+.scene-carousel-header .eyebrow{position:relative;display:inline-block;margin:0 0 1.55rem;padding:0 1.1rem;color:var(--gold-light)}
+.scene-carousel-header .eyebrow::before,.scene-carousel-header .eyebrow::after{content:'';position:absolute;top:50%;width:.55rem;height:1px;background:var(--gold)}
+.scene-carousel-header .eyebrow::before{left:0}.scene-carousel-header .eyebrow::after{right:0}
+.scene-carousel-header h2{margin:0;color:var(--paper);font:600 clamp(2.8rem,4.8vw,5.45rem)/1.08 var(--serif);letter-spacing:-.065em}
+.scene-carousel-header h2 span,.scene-carousel-header h2 em{display:block;font-style:normal;font-weight:inherit}
+.scene-carousel-header h2 em{margin-top:.16em;color:var(--paper);font-weight:500}
+.scene-carousel-header>p:last-child{max-width:440px;margin:1.8rem auto 0;color:rgba(243,238,228,.63);font-size:.84rem;line-height:1.9}
+.scene-carousel{position:relative;z-index:1;max-width:1240px;margin:0 auto}
+.scene-carousel-stage{position:relative;min-height:650px;overflow:hidden;border:1px solid rgba(236,209,154,.38);background:#07090a;outline:none}
+.scene-carousel-stage:focus-visible{outline:1px solid var(--gold-light);outline-offset:6px}
+.scene-slide{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(330px,.92fr);opacity:0;pointer-events:none;transform:translateX(4%);visibility:hidden;transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.scene-slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);visibility:visible}
+.scene-visual{position:relative;min-width:0;margin:0;overflow:hidden;background:#030405}
+.scene-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 54%,rgba(4,6,7,.58)),linear-gradient(0deg,rgba(4,6,7,.38),transparent 38%);pointer-events:none}
+.scene-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.91) contrast(1.05);transform:scale(1.01);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.scene-slide.is-active .scene-visual img{transform:scale(1.045)}
+.scene-visual figcaption{position:absolute;z-index:1;left:1.45rem;bottom:1.35rem;color:rgba(243,238,228,.78);font:.62rem/1 var(--mono);letter-spacing:.16em}
+.scene-copy{position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(2.5rem,5vw,5.75rem);overflow:hidden;background:linear-gradient(145deg,#101719 0%,#0b0f11 100%)}
+.scene-copy::before{content:'';position:absolute;top:15%;bottom:15%;left:clamp(1.2rem,2vw,2.2rem);width:1px;background:linear-gradient(180deg,transparent,rgba(199,159,84,.54) 18%,rgba(199,159,84,.16) 82%,transparent)}
+.scene-copy::after{content:'AX';position:absolute;right:-.16em;bottom:-.1em;color:rgba(236,209,154,.027);font:italic 13rem/.8 var(--serif);letter-spacing:-.18em;pointer-events:none}
+.scene-copy>p:first-child{position:relative;margin:0 0 1.45rem;color:var(--gold-light);font:.62rem/1.5 var(--mono);letter-spacing:.16em}
+.scene-copy h3{position:relative;max-width:7.5em;margin:0;color:var(--paper);font:600 clamp(2.5rem,3.8vw,4.45rem)/1.08 var(--serif);letter-spacing:-.07em}
+.scene-copy>span{position:relative;display:block;width:55px;height:1px;margin:2.5rem 0 1.35rem;background:linear-gradient(90deg,var(--gold),rgba(199,159,84,.15))}
+.scene-copy>p:last-child{position:relative;max-width:300px;margin:0;color:rgba(243,238,228,.64);font-size:.83rem;line-height:2}
+.scene-carousel-controls{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin:2rem 0 0}
+.scene-arrow{display:grid;width:42px;height:42px;place-items:center;border:1px solid rgba(236,209,154,.5);border-radius:50%;background:transparent;color:var(--paper);font:1.2rem/1 var(--serif);cursor:pointer;transition:.25s}
+.scene-arrow:hover,.scene-arrow:focus-visible{border-color:var(--gold-light);background:var(--gold-light);color:var(--ink);outline:0}
+.scene-carousel-dots{display:flex;gap:.55rem}.scene-carousel-dots button{width:6px;height:6px;padding:0;border:0;border-radius:50%;background:rgba(243,238,228,.34);cursor:pointer;transition:.25s}.scene-carousel-dots button.is-active{width:26px;border-radius:99px;background:var(--gold-light)}
+@media(max-width:900px){.scene-carousel-stage{min-height:900px}.scene-slide{grid-template-columns:1fr;grid-template-rows:minmax(440px,56vw) 1fr}.scene-visual::after{background:linear-gradient(0deg,rgba(4,6,7,.52),transparent 42%)}.scene-copy{min-height:410px;padding:3.8rem clamp(2rem,8vw,5rem)}.scene-copy::before{top:13%;bottom:13%;left:1.35rem}.scene-copy h3{max-width:10em}}
+@media(max-width:560px){.scene-carousel-section{padding:4.75rem 1.35rem}.scene-carousel-section::after{font-size:12rem}.scene-carousel-header{margin-bottom:3rem;text-align:left}.scene-carousel-header .eyebrow{padding-left:0}.scene-carousel-header .eyebrow::before{display:none}.scene-carousel-header h2{font-size:clamp(2.5rem,11.2vw,3.5rem);line-height:1.14}.scene-carousel-header>p:last-child{margin-left:0}.scene-carousel-stage{min-height:820px}.scene-slide{grid-template-rows:390px 1fr}.scene-copy{min-height:430px;padding:3.5rem 2rem}.scene-copy h3{font-size:clamp(2.25rem,10vw,3rem);line-height:1.14}.scene-copy>span{margin:1.9rem 0 1.05rem}.scene-copy>p:last-child{font-size:.78rem}.scene-visual figcaption{left:1rem;bottom:1rem}.scene-carousel-controls{margin-top:1.4rem}}
+
 /* Moonlight editorial carousel */
 .brand-carousel{display:grid;grid-template-columns:minmax(340px,.9fr) minmax(440px,1.1fr);gap:clamp(2.5rem,5.5vw,6.5rem);max-width:1480px;min-height:760px;margin:0 auto;padding:clamp(4rem,8vw,7.5rem) clamp(1.5rem,5vw,5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(circle at 90% 14%,rgba(197,161,101,.11),transparent 34%),#0c1012}
 .brand-carousel-copy{align-self:center;max-width:560px}
