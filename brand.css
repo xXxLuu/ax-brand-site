@@ -110,22 +110,12 @@
 @media(max-width:900px){.brand-carousel{grid-template-columns:1fr;gap:3rem;min-height:0}.brand-carousel-copy{max-width:520px}.carousel-stage{min-height:min(128vw,690px);border-top:1px solid var(--line);border-left:0}.carousel-poster{width:min(78%,430px)}}
 @media(max-width:560px){.brand-carousel{padding:4.75rem 1.35rem}.brand-carousel-copy h2{font-size:clamp(2.8rem,12vw,3.7rem);line-height:1.14}.brand-carousel-copy>p:not(.eyebrow){margin-top:2rem;padding-left:1rem;line-height:1.9}.carousel-controls{margin-top:2.4rem}.carousel-stage{min-height:138vw}.carousel-poster{width:88%}}
 
-/* Brand story — replacing the former research grid with a moonlit editorial page. */
-.brand-story-section{position:relative;overflow:hidden;padding:clamp(5.5rem,10vw,10rem) clamp(1.5rem,5vw,5rem);background:radial-gradient(ellipse at 50% 50%,rgba(243,238,228,.16),rgba(197,161,101,.075) 22%,transparent 55%),linear-gradient(135deg,#050607 0%,#0d1113 50%,#060708 100%);color:var(--paper)}
-.brand-story-section::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.36;background:radial-gradient(ellipse at 50% 52%,transparent 0 29%,rgba(0,0,0,.16) 47%,rgba(0,0,0,.62) 100%)}
-.story-shell{position:relative;max-width:1120px;margin:0 auto}
-.story-heading{max-width:850px;margin:0 auto clamp(4rem,7vw,6.5rem);text-align:center}
-.story-heading .eyebrow{margin-bottom:1.5rem;color:var(--gold-light)}
-.story-heading h2{margin:0;font:600 clamp(3.2rem,5.35vw,6.35rem)/1.03 var(--serif);letter-spacing:-.07em}
-.story-heading h2 em{color:var(--gold-light);font-weight:500}
-.story-panel{display:grid;grid-template-columns:clamp(130px,18vw,210px) 1fr;min-height:460px;border-top:1px solid rgba(236,209,154,.38);border-bottom:1px solid rgba(236,209,154,.24);background:rgba(6,8,9,.36)}
-.story-mark{display:flex;align-items:center;justify-content:center;padding:2rem;border-right:1px solid rgba(236,209,154,.24)}
-.story-mark img{width:clamp(72px,8vw,112px);height:auto;filter:invert(1);mix-blend-mode:screen;opacity:.9}
-.story-prose{display:flex;flex-direction:column;justify-content:center;max-width:720px;padding:clamp(2.8rem,5.5vw,5.5rem);color:rgba(243,238,228,.77)}
-.story-lead,.story-reflection,.story-closing{margin:0;font-size:clamp(.85rem,1.05vw,1rem);line-height:2.05;letter-spacing:.02em}
-.story-divider{width:48px;height:1px;margin:2.1rem 0;background:var(--gold)}
-.story-quote{margin:0;color:var(--paper);font:600 clamp(1.45rem,2.25vw,2.35rem)/1.45 var(--serif);letter-spacing:-.035em}
-.story-quote em{color:var(--gold-light);font-weight:500;font-style:normal}
-.story-reflection{margin-top:2.25rem}.story-closing{margin-top:2rem;color:var(--gold-light)}
-.story-footer{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1.5rem;padding:1.25rem 0 0;color:rgba(243,238,228,.55);font:.57rem/1.4 var(--mono);letter-spacing:.13em}.story-footer img{width:33px;height:auto;filter:invert(1);mix-blend-mode:screen}.story-footer span:last-child{text-align:right}
-@media(max-width:700px){.brand-story-section{padding:5.5rem 1.35rem}.story-heading{margin-bottom:3.5rem}.story-heading h2{font-size:clamp(2.85rem,12vw,4.1rem);line-height:1.08}.story-panel{grid-template-columns:1fr;min-height:0}.story-mark{justify-content:flex-start;padding:1.4rem;border-right:0;border-bottom:1px solid rgba(236,209,154,.24)}.story-mark img{width:55px}.story-prose{padding:2.8rem 1.4rem 3.1rem}.story-quote{font-size:clamp(1.35rem,6vw,1.8rem)}.story-footer{gap:.7rem;font-size:.48rem;letter-spacing:.07em}.story-footer img{width:28px}}
+/* Brand story — a deliberately simple two-panel composition for the supplied references. */
+.brand-story-section{padding:0;background:#080909}
+.story-reference-pair{display:grid;grid-template-columns:1fr 1fr;max-width:1800px;margin:0 auto}
+.story-reference{position:relative;min-width:0;margin:0;overflow:hidden;background:#070707}
+.story-reference::after{content:'';position:absolute;inset:0;border:1px solid rgba(236,209,154,.15);pointer-events:none}
+.story-reference img{display:block;width:100%;height:clamp(540px,56vw,920px);object-fit:cover}
+.story-reference-dark img{object-position:center top}
+.story-reference-light img{object-position:center center}
+@media(max-width:760px){.story-reference-pair{grid-template-columns:1fr}.story-reference img{height:auto;min-height:0}.story-reference-light{border-top:1px solid rgba(236,209,154,.24)}}
