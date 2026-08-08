@@ -24,7 +24,7 @@
 .hero-promise-mark img{display:block;width:100%;height:auto;filter:invert(1);mix-blend-mode:lighten}
 .hero-promise h1{position:static;width:auto;font-size:clamp(2.2rem,3.05vw,3.45rem);line-height:1.56;letter-spacing:.14em;transform:none}
 .hero-promise h1 span{display:block;padding-left:.18em}
-.hero-signature{position:static;width:auto;margin:clamp(4.2rem,8.5vh,6.5rem) 0 0;color:var(--paper);font:600 clamp(.95rem,1.08vw,1.16rem)/1.5 var(--serif);letter-spacing:.22em;white-space:nowrap;transform:none}
+.hero-signature{position:static;width:auto;margin:clamp(4.2rem,8.5vh,6.5rem) 0 0;color:var(--paper);font:600 clamp(1.08rem,1.24vw,1.32rem)/1.5 var(--serif);letter-spacing:.22em;white-space:nowrap;transform:none}
 .hero-image-wrap{display:block}
 #series,#science,#moonlight,#ritual,.collection-manifesto,#manifesto-title{scroll-margin-top:96px}
 @media (min-width:901px){
@@ -65,7 +65,7 @@
   .hero-image-wrap{display:block;order:initial;height:105vw}
   .hero-promise-mark{width:78px;margin-bottom:3.75rem}
   .hero-promise h1{font-size:clamp(2.15rem,9vw,2.75rem);line-height:1.55;letter-spacing:.12em}
-  .hero-signature{margin-top:4.25rem;font-size:.92rem;letter-spacing:.14em;white-space:normal}
+  .hero-signature{margin-top:4.25rem;font-size:1.02rem;letter-spacing:.14em;white-space:normal}
   .manifesto-image{min-height:126vw}
   .manifesto-copy{padding:4rem 1.35rem}
   .manifesto-copy h2{font-size:clamp(3rem,13.4vw,4.2rem)}
