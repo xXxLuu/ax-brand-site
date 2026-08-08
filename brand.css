@@ -49,9 +49,12 @@
 .manifesto-rule{position:relative;width:70px;height:1px;margin:2.7rem 0 1.15rem;background:linear-gradient(90deg,var(--gold),rgba(199,159,84,.15))}
 .manifesto-note{position:relative;margin:0;color:var(--gold-light);font:600 .68rem/1.6 var(--mono);letter-spacing:.14em}
 .moonlight-photo img{object-position:center 58%}
+.moonlight-copy h2{font-size:clamp(2.7rem,4.5vw,5.25rem);line-height:1.01}
 .moonlight-copy h2 em{color:var(--gold-light);font-style:normal;font-weight:500}
-.moonlight-copy>p:not(.eyebrow){position:relative;max-width:27em;padding-left:1.05rem;font:500 clamp(.95rem,1.05vw,1.1rem)/1.9 var(--serif);letter-spacing:.025em}
-.moonlight-copy>p:not(.eyebrow)::before{content:'';position:absolute;top:.5em;bottom:.5em;left:0;width:1px;background:linear-gradient(180deg,transparent,var(--gold),transparent)}
+.moonlight-copy h2 .moonlight-message{display:block}
+.moonlight-copy h2 .moonlight-message+.moonlight-message{position:relative;margin-top:.82em;padding-top:.84em}
+.moonlight-copy h2 .moonlight-message+.moonlight-message::before{content:'';position:absolute;top:0;left:0;width:54px;height:1px;background:linear-gradient(90deg,var(--gold),rgba(197,161,101,.08))}
+@media(max-width:560px){.moonlight-copy h2{font-size:clamp(2.25rem,9vw,3rem);line-height:1.06}}
 .membership-image img{object-position:center 52%}
 @media (min-width:901px){
   .brand-intro{grid-template-columns:minmax(0,.78fr) 1px minmax(0,.85fr) minmax(175px,.48fr);gap:clamp(1.75rem,4.5vw,5.25rem)}
