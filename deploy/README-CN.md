@@ -11,6 +11,15 @@
 
 ## 首次上线（只需一次）
 
+上线前可先运行一次本地检查：
+
+```bash
+cd ~/Documents/website
+bash deploy/scripts/preflight-check.sh
+```
+
+看到“上线前检查通过”后，再进行下面的上传操作。
+
 在本机终端进入网站文件夹后执行：
 
 ```bash
