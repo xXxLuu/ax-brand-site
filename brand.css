@@ -32,17 +32,16 @@
 }
 .collection-manifesto{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.78fr);max-width:1360px;min-height:660px;margin:0 auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#111417}
 .manifesto-image{position:relative;min-height:500px;overflow:hidden;background:#070809}
-.manifesto-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 57%;filter:saturate(.94) contrast(1.04);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.manifesto-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 72%;filter:saturate(.94) contrast(1.04);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
 .collection-manifesto:hover .manifesto-image img{transform:scale(1.025)}
 .manifesto-image::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(9,11,13,.5),transparent 36%);pointer-events:none}
 .manifesto-image span{position:absolute;z-index:1;left:1.5rem;bottom:1.4rem;color:rgba(243,238,228,.6);font:.56rem/1 var(--mono);letter-spacing:.15em}
 .manifesto-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(3rem,6.5vw,7.5rem);background:radial-gradient(circle at 100% 0,rgba(37,137,136,.13),transparent 40%)}
 .manifesto-copy .eyebrow{margin-bottom:1.3rem}
-.manifesto-copy h2{margin:0;font:600 clamp(3rem,4.8vw,5.35rem)/.91 var(--serif);letter-spacing:-.065em}
+.manifesto-copy h2{margin:0;font:600 clamp(2.25rem,2.8vw,3rem)/1.14 var(--serif);letter-spacing:-.055em}
 .manifesto-copy h2 em{color:var(--gold-light);font-weight:500}
-.manifesto-copy>p:not(.eyebrow):not(.manifesto-note){max-width:390px;margin:1.65rem 0 0;color:rgba(243,238,228,.68);font-size:.87rem}
 .manifesto-rule{width:48px;height:1px;margin:2.3rem 0 1rem;background:var(--gold)}
-.manifesto-note{margin:0;color:rgba(243,238,228,.45);font:.62rem/1.6 var(--mono);letter-spacing:.05em}
+.manifesto-note{margin:0;color:var(--gold-light);font:600 .68rem/1.6 var(--mono);letter-spacing:.1em}
 .moonlight-photo img{object-position:center 58%}
 .membership-image img{object-position:center 52%}
 @media (min-width:901px){
@@ -68,7 +67,7 @@
   .hero-signature{margin-top:4.25rem;font-size:1.35rem;line-height:1.35;letter-spacing:.1em;white-space:normal}
   .manifesto-image{min-height:126vw}
   .manifesto-copy{padding:4rem 1.35rem}
-  .manifesto-copy h2{font-size:clamp(3rem,13.4vw,4.2rem)}
+  .manifesto-copy h2{font-size:clamp(2.35rem,10vw,3rem);line-height:1.18}
   .manifesto-image span{left:1.2rem;bottom:1.2rem}
 }
 @media (min-width:561px) and (max-width:900px){
