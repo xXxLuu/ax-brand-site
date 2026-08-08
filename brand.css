@@ -14,17 +14,17 @@
 /* Visual refinement: a clearer product focal point and more resilient desktop balance. */
 .hero{max-width:none;margin:0}
 .brand{display:inline-flex;align-items:center;justify-content:flex-start;width:54px;height:54px;overflow:hidden}
-.brand img{display:block;width:54px;height:auto;filter:invert(1);mix-blend-mode:screen;transition:transform .25s ease,filter .25s ease}
+.brand img{display:block;width:54px;height:auto;filter:invert(1);mix-blend-mode:lighten;transition:transform .25s ease,filter .25s ease}
 .brand:hover img{transform:translateY(-1px);filter:invert(1) brightness(1.08)}
 .ax-footer .brand{width:48px;height:48px}
 .ax-footer .brand img{width:48px}
-.hero-content.hero-promise{align-items:center;max-width:none;padding:clamp(7.75rem,13vh,10.25rem) clamp(1.5rem,6vw,7rem) clamp(4rem,9vh,7rem);text-align:center}
+.hero-content.hero-promise{align-items:center;justify-content:space-between;max-width:none;padding:clamp(7.75rem,13vh,10.25rem) clamp(1.5rem,6vw,7rem) clamp(4rem,9vh,7rem);text-align:center}
 .hero-promise::before{display:none}
-.hero-promise-mark{width:clamp(88px,9vw,132px);margin:0 0 clamp(2.8rem,5vh,4.4rem)}
-.hero-promise-mark img{display:block;width:100%;height:auto;filter:invert(1);mix-blend-mode:screen}
-.hero-promise h1{font-size:clamp(3.5rem,5.5vw,6.75rem);line-height:1.16;letter-spacing:.035em}
-.hero-promise h1 em{color:var(--paper);font-style:normal;font-weight:600}
-.hero-signature{margin:clamp(3.2rem,6vh,5.25rem) 0 0;color:var(--paper);font:600 clamp(1rem,1.35vw,1.38rem)/1.5 var(--serif);letter-spacing:.31em;white-space:nowrap}
+.hero-promise-mark{width:clamp(88px,8vw,118px);margin:0}
+.hero-promise-mark img{display:block;width:100%;height:auto;filter:invert(1);mix-blend-mode:lighten}
+.hero-promise h1{font-size:clamp(3rem,4.65vw,5.35rem);line-height:1.18;letter-spacing:.18em}
+.hero-promise h1 span{display:block;padding-left:.18em}
+.hero-signature{margin:0;color:var(--paper);font:600 clamp(.92rem,1.15vw,1.15rem)/1.5 var(--serif);letter-spacing:.28em;white-space:nowrap}
 #series,#science,#moonlight,#ritual,.collection-manifesto,#manifesto-title{scroll-margin-top:96px}
 @media (min-width:901px){
   .hero{grid-template-columns:1fr 1fr}
@@ -63,8 +63,10 @@
   .brand img{width:48px}
   .hero-content.hero-promise{min-height:560px;padding:5.75rem 1.35rem 4rem}
   .hero-promise-mark{width:90px;margin-bottom:2.5rem}
-  .hero-promise h1{font-size:clamp(3rem,14.5vw,4.4rem);letter-spacing:.015em}
-  .hero-signature{margin-top:3rem;font-size:.98rem;letter-spacing:.18em;white-space:normal}
+  .hero-content.hero-promise{min-height:660px;padding:5.75rem 1.35rem 3.2rem}
+  .hero-promise-mark{width:82px}
+  .hero-promise h1{font-size:clamp(2.65rem,12.2vw,3.7rem);line-height:1.24;letter-spacing:.14em}
+  .hero-signature{font-size:.88rem;letter-spacing:.17em;white-space:normal}
   .manifesto-image{min-height:126vw}
   .manifesto-copy{padding:4rem 1.35rem}
   .manifesto-copy h2{font-size:clamp(3rem,13.4vw,4.2rem)}
