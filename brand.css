@@ -214,3 +214,27 @@ body{letter-spacing:.012em}
   .brand-carousel-copy h2{font-size:clamp(2.8rem,10.8vw,3.7rem);line-height:1.18}
   .story-page-title p{font-size:2.385rem}
 }
+
+/* A little more vertical breathing room without changing the type scale or hierarchy. */
+body{line-height:1.72}
+.section-heading h2,.science-header h2,.membership-copy h2{line-height:1.04}
+.manifesto-copy h2{line-height:1.27}
+.manifesto-copy h2.self-love-title{line-height:1.33}
+.series-title{line-height:1.16!important}
+.moonlight-copy h2{line-height:1.28}
+.scene-carousel-header h2{line-height:1.22}
+.scene-copy h3{line-height:1.19}
+.brand-carousel-copy h2{line-height:1.23}
+.brand-carousel-copy>p:not(.eyebrow){line-height:2.18}
+.story-page-title p{line-height:1.1}
+.story-page-copy{line-height:1.82}
+@media(max-width:560px){
+  .manifesto-copy h2{line-height:1.29}
+  .manifesto-copy h2.self-love-title{line-height:1.34}
+  .series-title{line-height:1.24!important}
+  .moonlight-copy h2{line-height:1.29}
+  .scene-carousel-header h2{line-height:1.24}
+  .scene-copy h3{line-height:1.23}
+  .brand-carousel-copy h2{line-height:1.24}
+  .story-page-title p{line-height:1.14}
+}
