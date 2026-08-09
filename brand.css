@@ -178,3 +178,10 @@
 :root{--ax-unified-font:'Noto Serif SC','Songti SC',STSong,serif}
 html{font-size:15px}
 body,body *,body *::before,body *::after{font-family:var(--ax-unified-font)!important;font-style:normal!important}
+
+/* Slightly airier rhythm for the three key manifesto headlines. */
+.brand-carousel-copy h2{line-height:1.14;letter-spacing:-.035em}
+.brand-carousel-copy>p:not(.eyebrow){line-height:2.08;letter-spacing:.025em}
+.manifesto-copy h2.self-love-title{line-height:1.23;letter-spacing:-.045em}
+.moonlight-copy h2{line-height:1.19;letter-spacing:-.045em}
+.moonlight-copy h2 .moonlight-message+.moonlight-message{margin-top:.62em;padding-top:.66em}
