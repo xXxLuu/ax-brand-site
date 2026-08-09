@@ -173,3 +173,8 @@
 .story-page-copy p:last-child{margin-bottom:0}.story-page-copy em{font-style:normal;color:var(--gold-light)}
 .story-page-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:1.25rem;border-top:1px solid rgba(236,209,154,.46);color:rgba(243,238,228,.68);font:.58rem/1 var(--serif);letter-spacing:.09em}
 @media(max-width:760px){.brand-story-section{padding:1rem;background:linear-gradient(145deg,#030506,#0c1213)}.story-reference-pair{grid-template-columns:1fr}.story-reference-light{border-top:1px solid rgba(236,209,154,.28);border-left:0}.story-reference img{min-height:0;height:auto}.story-text-page{min-height:0;padding:4.2rem 2.15rem 2.1rem}.story-page-title p{font-size:2.65rem}.story-page-copy{font-size:1rem;line-height:1.75}.story-reference-dark::after{inset:.7rem}}
+
+/* Unified typography: one upright font family across the entire brand site. */
+:root{--ax-unified-font:'Noto Serif SC','Songti SC',STSong,serif}
+html{font-size:15px}
+body,body *,body *::before,body *::after{font-family:var(--ax-unified-font)!important;font-style:normal!important}
