@@ -176,7 +176,7 @@
 
 /* Unified typography: one upright font family across the entire brand site. */
 :root{--ax-unified-font:'Noto Serif SC','Songti SC',STSong,serif}
-html{font-size:15px}
+html{font-size:13.5px}
 body,body *,body *::before,body *::after{font-family:var(--ax-unified-font)!important;font-style:normal!important}
 
 /* Slightly airier rhythm for the three key manifesto headlines. */
@@ -185,3 +185,32 @@ body,body *,body *::before,body *::after{font-family:var(--ax-unified-font)!impo
 .manifesto-copy h2.self-love-title{line-height:1.23;letter-spacing:-.045em}
 .moonlight-copy h2{line-height:1.19;letter-spacing:-.045em}
 .moonlight-copy h2 .moonlight-message+.moonlight-message{margin-top:.62em;padding-top:.66em}
+
+/* Keep the existing type hierarchy while reducing adaptive display type by the same 10%. */
+body{letter-spacing:.012em}
+.hero h1{font-size:clamp(3.9rem,6.75vw,8.2rem);letter-spacing:-.045em}
+.intro-kicker{font-size:clamp(2.8rem,4.05vw,5rem);letter-spacing:-.035em}
+.section-heading h2,.science-header h2,.membership-copy h2{font-size:clamp(3.1rem,4.5vw,5.7rem);letter-spacing:-.045em}
+.product-copy h3{font-size:clamp(2.45rem,3.6vw,4.7rem);letter-spacing:-.035em}
+.manifesto-copy h2{font-size:clamp(2.45rem,2.925vw,3.75rem);line-height:1.21;letter-spacing:-.04em}
+.manifesto-copy h2.self-love-title{font-size:clamp(2.15rem,2.322vw,3.25rem);line-height:1.27;letter-spacing:-.03em}
+.series-title{font-size:clamp(2.85rem,4.05vw,5rem)!important;letter-spacing:-.045em!important}
+.moonlight-copy h2{font-size:clamp(2.4rem,2.79vw,4rem);line-height:1.22;letter-spacing:-.035em}
+.scene-carousel-header h2{font-size:clamp(2.8rem,4.32vw,5.45rem);line-height:1.16;letter-spacing:-.04em}
+.scene-copy h3{font-size:clamp(2.5rem,3.42vw,4.45rem);line-height:1.13;letter-spacing:-.04em}
+.brand-carousel-copy h2{font-size:clamp(3rem,3.33vw,4.75rem);line-height:1.17;letter-spacing:-.025em}
+.brand-carousel-copy>p:not(.eyebrow){font-size:clamp(.9rem,.9vw,1rem);line-height:2.12;letter-spacing:.035em}
+.story-page-title p{font-size:clamp(2.15rem,3.105vw,3.85rem);line-height:1.04;letter-spacing:-.045em}
+.story-page-copy{font-size:clamp(.9rem,1.017vw,1.17rem);line-height:1.76;letter-spacing:.03em}
+@media(max-width:560px){
+  .hero h1{font-size:clamp(3.55rem,13.95vw,4.8rem)}
+  .hero-promise h1{font-size:clamp(2.15rem,8.1vw,2.75rem);line-height:1.38;letter-spacing:.14em}
+  .manifesto-copy h2{font-size:clamp(2.35rem,9vw,3rem);line-height:1.23}
+  .manifesto-copy h2.self-love-title{font-size:clamp(2.05rem,7.92vw,2.85rem);line-height:1.28}
+  .series-title{font-size:clamp(1.95rem,7.83vw,2.55rem)!important;line-height:1.2!important}
+  .moonlight-copy h2{font-size:clamp(1.85rem,5.58vw,2.65rem);line-height:1.23}
+  .scene-carousel-header h2{font-size:clamp(2.5rem,10.08vw,3.5rem);line-height:1.18}
+  .scene-copy h3{font-size:clamp(2.25rem,9vw,3rem);line-height:1.18}
+  .brand-carousel-copy h2{font-size:clamp(2.8rem,10.8vw,3.7rem);line-height:1.18}
+  .story-page-title p{font-size:2.385rem}
+}
