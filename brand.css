@@ -45,7 +45,7 @@
 .manifesto-copy .eyebrow{position:relative;margin:0 0 1.8rem;padding-left:1.15rem}
 .manifesto-copy .eyebrow::before{content:'';position:absolute;left:0;top:50%;width:.45rem;height:1px;background:var(--gold)}
 .manifesto-copy h2{position:relative;max-width:10.5em;margin:0;font:600 clamp(2.45rem,3.25vw,3.75rem)/1.16 var(--serif);letter-spacing:-.065em}
-.manifesto-copy h2 em{color:var(--gold-light);font-weight:500}
+.manifesto-copy h2 em{color:var(--paper);font-weight:500}
 .manifesto-copy h2.self-love-title{max-width:12.4em;font-size:clamp(2.15rem,2.58vw,3.25rem);line-height:1.17;letter-spacing:-.075em}
 .manifesto-copy h2.self-love-title span,.manifesto-copy h2.self-love-title em{display:block}
 .manifesto-copy h2.self-love-title .self-love-turn{margin-top:.46em}
@@ -136,7 +136,7 @@
 .brand-carousel-copy .eyebrow{position:relative;margin:0 0 1.7rem;padding-left:1.15rem;color:var(--gold-light)}
 .brand-carousel-copy .eyebrow::before{content:'';position:absolute;top:50%;left:0;width:.48rem;height:1px;background:var(--gold)}
 .brand-carousel-copy h2{margin:0;font:600 clamp(3rem,3.7vw,4.75rem)/1.08 var(--serif);letter-spacing:-.06em}
-.brand-carousel-copy h2 em{color:var(--gold-light);font-style:normal;font-weight:500}
+.brand-carousel-copy h2 em{color:var(--paper);font-style:normal;font-weight:500}
 .brand-carousel-copy>p:not(.eyebrow){max-width:450px;margin:2.7rem 0 0;padding-left:1.35rem;border-left:1px solid rgba(199,159,84,.46);color:rgba(243,238,228,.72);font-size:clamp(.9rem,1vw,1rem);line-height:2}
 .carousel-controls{display:flex;align-items:center;gap:1.25rem;margin-top:3.2rem}
 .carousel-arrow{display:grid;width:43px;height:43px;place-items:center;border:1px solid rgba(236,209,154,.5);border-radius:50%;background:transparent;color:var(--paper);font:1.25rem/1 var(--serif);cursor:pointer;transition:.25s}
