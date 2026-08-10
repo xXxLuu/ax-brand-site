@@ -246,3 +246,7 @@ body{line-height:1.72}
 @media(max-width:560px){
   .hero-promise h1{font-size:clamp(2.15rem,9vw,2.75rem);line-height:1.34;letter-spacing:.12em}
 }
+
+/* Keep the portrait-format firming artwork intact within its wider product panel. */
+.product-stage[data-product="firming"] .product-visual{background:#000}
+.product-stage[data-product="firming"] .product-visual img{object-fit:contain}
