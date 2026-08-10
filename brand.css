@@ -249,4 +249,4 @@ body{line-height:1.72}
 
 /* Keep the portrait-format firming artwork intact within its wider product panel. */
 .product-stage[data-product="firming"] .product-visual{background:#000}
-.product-stage[data-product="firming"] .product-visual img{object-fit:contain}
+.product-stage[data-product="firming"] .product-visual img{object-fit:cover;object-position:center 60%}
